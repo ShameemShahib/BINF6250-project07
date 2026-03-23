@@ -96,7 +96,14 @@ Put pseudocode in this box:
         - reset the counter to 1
 - return encoded string
 
-9. 
+9. run_length_decode
+- start with an empty decoded string
+- set index = 0
+- read one character
+- read the digits that come after it to form the count
+- convert the count to integer
+- repeat the character that many times and add it to the decoded string
+- return the decoded string
 ```
 
 # Successes
