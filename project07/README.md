@@ -1,8 +1,17 @@
 # Introduction
-Description of the project
+This project implements the Burrows-Wheeler Transform (BWT) and its associated algorithms for efficient string processing and pattern matching. The Burrows-Wheeler Transform is a fundamental technique widely used in bioinformatics, particularly in genome alignment tools, as well as in data compression algorithms.
+
+The project builds a complete pipeline starting from a reference string and supports:
+
+Construction of the suffix array
+Generation of the Burrows-Wheeler Transform (BWT)
+Computation of auxiliary data structures such as:
+Count (first occurrence) table
+Occurrence table
+Implementation of backward search for fast exact pattern matching
+Run-length encoding and decoding for compressing BWT output
 
 # Pseudocode
-Put pseudocode in this box:
 
 ```
 1. BWT function:
@@ -113,11 +122,13 @@ Description of the team's learning points
 Description of the stumbling blocks the team experienced
 
 # Personal Reflections
-## Group Leader
-Group leader's reflection on the project
+## Tien Nguyen
+Working on this project was both challenging and rewarding, particularly in understanding the core concepts behind the Burrows-Wheeler Transform and backward search. I initially struggled with grasping how the count and occur tables work together to update the search range, and why the algorithm processes the query from right to left. It took multiple walkthroughs with examples for me to build a clear mental model of how these components map to matching positions in the original string. Despite these conceptual challenges, I found this project more manageable compared to others that required scaling to large, real-world datasets, since the focus here was more on understanding the logic and ensuring correctness rather than optimizing performance. Overall, this project helped deepen my understanding of advanced string algorithms and reinforced the importance of connecting theory with implementation.
 
-## Other member
+## Fardina Tabassum
 Other members' reflections on the project
+
+## Shameem Shahib
 
 # Generative AI Appendix
 As per the syllabus
